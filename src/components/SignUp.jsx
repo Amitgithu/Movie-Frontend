@@ -16,7 +16,7 @@ function SignUp() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8000/register", {
+      const response = await axios.post("https://movie-backend-wwpf.onrender.com/register", {
         name,
         email,
         password,

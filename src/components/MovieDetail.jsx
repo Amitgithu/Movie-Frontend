@@ -64,7 +64,7 @@ function MovieDetail() {
     }
     if (playlistName) {
       const response = await axios.post(
-        "http://localhost:8000/create-playlist",
+        "https://movie-backend-wwpf.onrender.com/create-playlist",
         {
           movies: movie.Title,
           playlistName,

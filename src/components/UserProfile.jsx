@@ -14,7 +14,7 @@ const UserProfile = () => {
       const userData = JSON.parse(localStorage.getItem('userDetails'));
       setUser(userData);
 
-      const res = await axios.get(`http://localhost:8000/user/${userData._id}`);
+      const res = await axios.get(`https://movie-backend-wwpf.onrender.com/user/${userData._id}`);
       const playlists = res.data.playlists;
 
       setPrivatePlaylists(playlists.filter(playlist => playlist.playlistPrivacy === 'private'));
@@ -26,7 +26,7 @@ const UserProfile = () => {
 
   const handleDeletePlaylist = async (playlistId) => {
     try {
-      await axios.delete(`http://localhost:8000/delete/${playlistId}`);
+      await axios.delete(`https://movie-backend-wwpf.onrender.com/delete/${playlistId}`);
       setPrivatePlaylists(privatePlaylists.filter(playlist => playlist._id !== playlistId));
       setPublicPlaylists(publicPlaylists.filter(playlist => playlist._id !== playlistId));
     } catch (error) {

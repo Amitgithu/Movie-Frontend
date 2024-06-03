@@ -10,7 +10,7 @@ function PlaylistDetail() {
   useEffect(() => {
     const fetchPlaylist = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/playlists/${playlist_id}`);
+        const res = await axios.get(`https://movie-backend-wwpf.onrender.com/playlists/${playlist_id}`);
         setPlaylist(res.data.movieDetails);
       } catch (error) {
         console.error('Error fetching playlist:', error);

@@ -18,7 +18,7 @@ const Home = () => {
 
   const fetchPublicPlaylists = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/public-playlists");
+      const res = await axios.get("https://movie-backend-wwpf.onrender.com/public-playlists");
       setPublicPlaylists(res.data);
     } catch (error) {
       console.error("Error fetching public playlists", error);
