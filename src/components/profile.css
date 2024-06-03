@@ -1,0 +1,56 @@
+.user-card {
+  background: #f6f6f6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.playlists-card {
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.playlist-card {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.playlist-card:hover {
+  transform: translateY(-6px);
+}
+
+.playlist-title {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.playlist-movies {
+  font-style: italic;
+  color: #34495e;
+}
+
+.playlist-btn {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+}
+
+.playlist-btn:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+
+@media (max-width: 576px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .input-group {
+    width: 100%;
+  }
+}
