@@ -86,7 +86,7 @@ function SignUp() {
             </button>
           </div>
 
-          <h6 className="text-center mt-5">
+          <h6 className="text-center mt-4">
             Have already an account?{" "}
             <Link to={"/login"} style={{ color: "#0d6efd" }}>
               Login here

@@ -92,7 +92,7 @@ function Login() {
             </button>
           </div>
 
-          <h6 className="text-center mt-5">
+          <h6 className="text-center mt-4">
             Don't have an account?{" "}
             <Link
               to={"/register"}
